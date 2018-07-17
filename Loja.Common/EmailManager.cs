@@ -59,8 +59,8 @@ namespace Loja.Common
         public async Task EnviarEmail(string assunto,StringBuilder corpo, List<string> listDestinario, List<Attachment> listAnexo)
         {
 
-            const string sUserName = "rogerfbatista@sonicti.somee.com";
-            const string sPassword = "031203bianca";
+            const string sUserName = "";
+            const string sPassword = "";
 
 
             var objEmail = new MailMessage();
