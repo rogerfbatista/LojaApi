@@ -31,6 +31,8 @@
                     link.download = "myFileName.txt";
                     link.click();
 
+
+
                 });
 
 
