@@ -1,0 +1,60 @@
+﻿<div data-ng-controller="itiController">
+    <div class="row">
+        <div class="col-lg-4">
+
+        </div>
+        <div class="col-lg-4">
+
+        </div>
+        <div class="col-lg-4">
+
+        </div>
+    </div>
+    <form>
+        <fieldset>
+            <legend>{{messagen}}</legend>
+            <div class="row">
+                <div class="col-sm-2">
+                    <input id="txtPesquisar" name="txtPesquisar" ng-model="texto" class="input-sm" placeholder="Digite o Nome do Arquivo" />
+                </div>
+                <div class="col-sm-3">
+                    <button id="btnPesquisar" ng-click="pesquisar()" type="button" class="btn btn-default">
+                        <span class="glyphicon glyphicon-search"></span> Pesquisar
+                    </button>
+                </div>
+                <div class="col-sm-7">
+
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="container">
+                <h2>Basic Table</h2>
+                <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Arquivo</th>
+                            <th>Remetente</th>
+                            <th>Açoes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="x in listaIti">
+                            <td>{{ x.Arquivo }}</td>
+                            <td>{{ x.Remetente }}</td>
+                            <td>
+                                <button id="btnPesquisar" ng-click="download(x.Arquivo)" type="button" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-download"></span>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

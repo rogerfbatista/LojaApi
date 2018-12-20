@@ -29,10 +29,10 @@ namespace Loja.Data.Models.Mapping
             this.Property(t => t.ImagemCliente).HasColumnName("ImagemCliente");
             this.Property(t => t.Ativo).HasColumnName("Ativo");
 
-            // Relationships
-            this.HasOptional(t => t.ProdutoTipo)
-                .WithMany(t => t.Produtos)
-                .HasForeignKey(d => d.ProdutoTipoId);
+            //// Relationships
+            //this.HasOptional(t => t.ProdutoTipo)
+            //    .WithMany(t => t.Produtos)
+            //    .HasForeignKey(d => d.ProdutoTipoId);
 
         }
     }

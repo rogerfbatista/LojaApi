@@ -153,13 +153,13 @@ namespace Loja.Data.Repositorys
 
         public void Dispose()
         {
-            DbContext.Dispose();
+          //  DbContext.Dispose();
         }
 
         async Task IRepositoryBase<T>.Dispose()
         {
 
-            await Task.Factory.StartNew(() => DbContext.Dispose());
+          //  await Task.Factory.StartNew(() => DbContext.Dispose());
         }
 
 

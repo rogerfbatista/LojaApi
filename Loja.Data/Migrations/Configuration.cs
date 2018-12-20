@@ -53,10 +53,10 @@ namespace Loja.Data.Migrations
            // context.UsuarioPerfils.AddOrUpdate(new UsuarioPerfil("AdministradorSistema",
            //  Util<UsuarioPerfil>.CopyImageToByteArray(System.Drawing.Image.FromFile(@"C:\Users\Bianca\Downloads\administrador.png"))));
 
-            var user = new Usuario(1, 2, "Rogerio Ferreira Batista", "rogerfbatista@gmail.com", DateTime.Now,
-              Util<Usuario>.CopyImageToByteArray(System.Drawing.Image.FromFile(@"C:\Users\Bianca\Downloads\Rogerio.jpg")));
-            user.SetSenha("bianca", "bianca");
-            context.Usuarios.AddOrUpdate(user);
+            //var user = new Usuario(1, 2, "Rogerio Ferreira Batista", "rogerfbatista@gmail.com", DateTime.Now,
+            //  Util<Usuario>.CopyImageToByteArray(System.Drawing.Image.FromFile(@"C:\Users\Bianca\Downloads\Rogerio.jpg")));
+            //user.SetSenha("bianca", "bianca");
+            //context.Usuarios.AddOrUpdate(user);
 
             //context.Servico.AddOrUpdate(new Servico("Cliente", true, 0));
             //context.Servico.AddOrUpdate(new Servico("ClienteContato", true, 0));

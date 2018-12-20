@@ -15,12 +15,10 @@ namespace Loja.Data.Repositorys
         {
             using (var loja = new LojaContext())
             {
-                return await loja.Produto.Where(produto => produto.ProdutoId == id)
-                    .Include(produto => produto.ProdutoEstoques)
-                    .Include(produto => produto.ProdutoClienteSaidaItems)
-                    .Include(produto => produto.ProdutoFornecedorEntradas)
-                    .FirstOrDefaultAsync();
+                return await loja.Produto.Where(produto => produto.ProdutoId == id).FirstOrDefaultAsync();                          
+              
             }
+                  
         }
 
 

@@ -23,16 +23,16 @@ namespace Loja.Application
         {
             var produto = await _produtoService.GetById(id);
 
-            AssertionConcern.AssertArgumentFalse(produto.ProdutoClienteSaidaItems.Any(saida => saida.Ativo == true),
-                "Não é possivel Excluir Existem produtos Vendidos");
+            //AssertionConcern.AssertArgumentFalse(produto.ProdutoClienteSaidaItems.Any(saida => saida.Ativo == true),
+            //    "Não é possivel Excluir Existem produtos Vendidos");
 
 
-            AssertionConcern.AssertArgumentFalse(produto.ProdutoEstoques.Any(estoque => estoque.Ativo == true),
-                "Não é possivel Excluir Existem produtos no Estoque");
+            //AssertionConcern.AssertArgumentFalse(produto.ProdutoEstoques.Any(estoque => estoque.Ativo == true),
+            //    "Não é possivel Excluir Existem produtos no Estoque");
 
 
-            AssertionConcern.AssertArgumentFalse(produto.ProdutoFornecedorEntradas.Any(estoque => estoque.Ativo == true),
-                "Não é possivel Excluir Existem produtos entradas de produto fornecedor");
+            //AssertionConcern.AssertArgumentFalse(produto.ProdutoFornecedorEntradas.Any(estoque => estoque.Ativo == true),
+            //    "Não é possivel Excluir Existem produtos entradas de produto fornecedor");
 
 
             produto.Ativo = false;
