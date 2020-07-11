@@ -1,3 +1,3 @@
 # LojaApi
 WebApi with Angularjs
-http://www.sonicti.somee.com/
+http://www.sonic.somee.com/
